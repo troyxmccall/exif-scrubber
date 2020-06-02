@@ -9,13 +9,13 @@ This toolkit is spefically designed to be transparent and open-source for protes
 
 
 ## The software that runs:
-
-Alpine Linux Container with [Exiv2](https://www.exiv2.org/)
+[
+Alpine Linux](https://alpinelinux.org/) Container with [Exiv2](https://www.exiv2.org/)
 
 
 ## Usage:
 
-1) download docker for your OS: https://docs.docker.com/get-docker/
+1) Download docker for your OS: https://docs.docker.com/get-docker/
 
 2) Make a temp folder on your host machine and copy the photos you want to strip to it
 ie: 
@@ -49,4 +49,6 @@ exit
 ```
 
 7) Follow these additional guidelines: https://www.eff.org/deeplinks/2016/11/digital-security-tips-for-protesters
+
+8) I recommend using [Tor](https://www.torproject.org/download/) & [ProtonMail](https://protonmail.com/)
 
