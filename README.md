@@ -25,31 +25,28 @@ mkdir -p ~/Pictures/photos-to-strip && cd ~/Pictures/photos-to-strip && open .
 ```
 
 
-3) run these 2 commands
-
-#### Run container (mount your `~/Pictures/photos-to-strip` in a `/data` directory inside the container)
+3) run container (mount your `~/Pictures/photos-to-strip` in a `/data` directory inside the container)
 
 ```bash
 docker run -it --rm -v ~/Pictures/photos-to-strip:/data troyxmccall/exif-scrubber
 ```
 
-##### Use Exiv2 to remove all exif data 
+4) Use Exiv2 to remove all exif data 
 
 ```bash
 cd /data/ && exiv2 rm *
 ```
 
-4) Use tool to check your files
+5) Use tool to check your files
 
 ```bash
 cd /data/ && exiv2 pr *
 ```
 
-5) close out
+6) close out
 ```bash
 exit
 ```
 
-6) Follow these guidelines: https://www.eff.org/deeplinks/2016/11/digital-security-tips-for-protesters
-7) Use [Tor](https://www.torproject.org/download/) and [ProtonMail](https://protonmail.com/) when communiticating with journalists and other protestors
-8) Never access your personal accounts and protest accounts from the same IP address
+7) Follow these additional guidelines: https://www.eff.org/deeplinks/2016/11/digital-security-tips-for-protesters
+
