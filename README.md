@@ -19,7 +19,7 @@ Alpine Linux Container with [Exiv2](https://www.exiv2.org/)
 ie: 
 
 ```bash
-mkdir -p ~/Pictures/photos-to-stirp && cd ~/Pictures/photos-to-stirp/ && open .
+mkdir -p ~/Pictures/photos-to-strip && cd ~/Pictures/photos-to-strip && open .
 ```
 
 
