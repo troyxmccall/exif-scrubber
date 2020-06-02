@@ -5,6 +5,8 @@ Digital photographs carry what’s known as [EXIF data](https://en.wikipedia.org
 
 This information could potentially identify photographers or be used to prove a person was at a given place at a set time, potentially breaking curfews, for example. 
 
+This toolkit is spefically designed to be transparent and open-source for protestors/journalists to use
+
 
 ## The software that runs:
 
@@ -25,7 +27,7 @@ mkdir -p ~/Pictures/photos-to-strip && cd ~/Pictures/photos-to-strip && open .
 
 3) run these 2 commands
 
-##### Run container (mount your desktop in a /data directory inside the container)
+#### Run container (mount your `~/Pictures/photos-to-strip` in a `/data` directory inside the container)
 
 ```bash
 docker run -it --rm -v ~/Pictures/photos-to-strip:/data troyxmccall/exif-scrubber
@@ -43,6 +45,11 @@ cd /data/ && exiv2 rm *
 cd /data/ && exiv2 pr *
 ```
 
-5) Follow these guidelines: https://www.eff.org/deeplinks/2016/11/digital-security-tips-for-protesters
-6) Use [Tor](https://www.torproject.org/download/) and [ProtonMail](https://protonmail.com/)
-7) Never access your personal accounts while connected to Tor
+5) close out
+```bash
+exit
+```
+
+6) Follow these guidelines: https://www.eff.org/deeplinks/2016/11/digital-security-tips-for-protesters
+7) Use [Tor](https://www.torproject.org/download/) and [ProtonMail](https://protonmail.com/) when communiticating with journalists and other protestors
+8) Never access your personal accounts and protest accounts from the same IP address
