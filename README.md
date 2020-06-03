@@ -34,7 +34,7 @@ docker run -it --rm -v ~/Pictures/photos-to-strip:/data troyxmccall/exif-scrubbe
 4) Use Exiv2 to remove all exif data 
 
 ```bash
-cd /data/ && exiv2 rm *
+cd /data/ && exiv2 -v rm *
 ```
 
 5) Use tool to check your files
